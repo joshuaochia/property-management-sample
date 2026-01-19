@@ -1,12 +1,14 @@
-import express, { Request, Response } from "express";
+import express, { Express } from "express";
+import agentRoutes from "./routes/agent";
+import { errorHandler } from "./middleware/errorHandler";
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const app: Express = express();
+const PORT = 3000;
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello from Express + TypeScript!");
-});
+app.use(express.json()); // parse JSON request body
+app.use("/agents", agentRoutes);
+app.use(errorHandler); // Global error handler
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+app.listen(PORT, () =>
+  console.log(`Server running at http://localhost:${PORT}`),
+);
