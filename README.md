@@ -387,20 +387,10 @@ property-management-sample/
 
 ---
 
-## ⚠️ Important Notes
-
-### In-Memory Storage
-
-- Data is stored in RAM only
-- **All data is lost when server restarts**
-- Not suitable for production use
-- Perfect for development and testing
-
 ### Future Enhancements
 
 - 🗄️ Add database integration (PostgreSQL, MongoDB)
 - 🔐 Implement authentication & authorization
-- 🔍 Add search and filtering
 - 📄 Implement pagination
 - 📝 Add logging (Winston, Pino)
 - ✅ Add unit and integration tests
@@ -408,34 +398,6 @@ property-management-sample/
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License.
-
----
-
-## 👤 Author
-
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
----
-
-## 🙏 Acknowledgments
-
-- Express.js team
-- TypeScript community
-- Zod validation library
-
----
-
-**Happy Coding! 🚀**
